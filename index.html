@@ -21,6 +21,10 @@
       </h1>
     </div>
   <style>
+.main {
+  visibility: hidden;
+}
+    
     body {
     display: flex;
     justify-content: center;
@@ -60,9 +64,6 @@
     }
 }
 
-.main {
-  display: none;
-}
 </style>
 <script>
 
@@ -70,12 +71,12 @@
   const loader = document.getElementsByClassName("wave-text")[0]
   const mainStuff = document.getElementsByClassName("main")[0]
   setTimeout(function() {
-  loader.style.display = "none"
+  loader.style.visiblity = "hidden"
 
   document.body.style.background = "blanchedalmond"
 }, 5000);
 
-mainStuff.style.display = "block"
+mainStuff.style.visiblity = "hidden"
 
 
   
