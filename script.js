@@ -1,4 +1,4 @@
-setTimeout(function() {
-  loader = getElementsByClassName("wave-container")
-  loader.style.visibility = "hidden"
-}, 10000)
+function myFunction() {
+  
+}
+setTimeout(myFunction, 5000);
