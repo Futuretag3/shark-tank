@@ -62,14 +62,7 @@
   setTimeout(function() {
   loader.style.display = "none"
     
-  function removeStyles(el) {
-  el.removeAttribute('style')
-
-  el.childNodes.forEach(x => {
-      if(x.nodeType == 1) removeStyles(x)
-  })
-
-  removeStyles(document.body)
+  document.body.style.color = "blanchedalmond"
 }
 }, 5000);
 
