@@ -12,7 +12,12 @@
         <span>D</span>
         <span>I</span>
         <span>N</span>
-        <span>G</span>
+        <span>G</span>  
+      </h1>
+    </div>
+    <div class="main">
+      <h1>
+        Welcome to R&R Incorporated
       </h1>
     </div>
   <style>
@@ -54,16 +59,24 @@
         transform: translateY(-20px);
     }
 }
+
+.main {
+  display: none;
+}
 </style>
 <script>
 
   
   const loader = document.getElementsByClassName("wave-text")[0]
+  const mainStuff = document.getElementsByClassName("main")[0]
   setTimeout(function() {
   loader.style.display = "none"
 
   document.body.style.background = "blanchedalmond"
 }, 5000);
+
+mainStuff.style.display = "block"
+
 
   
 
