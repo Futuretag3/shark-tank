@@ -1,5 +1,5 @@
-function myFunction() {
-  loader = getElementByClassName("wave-text")
-  loader.style.visibility = "hidden"
-}
-setTimeout(myFunction, 5000);
+const h1 = document.createElement('h1);
+
+h1.textContent = 'test'
+
+document.body.appendChild(h1)
