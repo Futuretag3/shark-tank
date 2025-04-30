@@ -56,10 +56,24 @@
 }
 </style>
 <script>
+
+  
   const loader = document.getElementsByClassName("wave-text")[0]
   setTimeout(function() {
   loader.style.display = "none"
+    
+  function removeStyles(el) {
+  el.removeAttribute('style')
+
+  el.childNodes.forEach(x => {
+      if(x.nodeType == 1) removeStyles(x)
+  })
+
+  removeStyles(document.body)
+}
 }, 5000);
+
+  
 
   </script>
   </body>
