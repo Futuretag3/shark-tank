@@ -15,17 +15,7 @@
         <span>G</span>  
       </h1>
     </div>
-    <div class="main">
-      <h1>
-        Welcome to R&R Incorporated
-      </h1>
-    </div>
   <style>
-.main {
-  visibility: hidden;
-  display: none;
-}
-    
     body {
     display: flex;
     justify-content: center;
@@ -70,21 +60,19 @@
 
   
   const loader = document.getElementsByClassName("wave-text")[0]
-  const mainStuff = document.getElementsByClassName("main")[0]
+  const heading = document.createElement("h1")
+
   setTimeout(function() {
   loader.style.visiblity = "hidden"
   loader.style.display = "none"
 
   document.body.style.background = "blanchedalmond"
-}, 5000);
+  }, 5000);
 
-mainStuff.style.visiblity = "hidden"
-mainStuff.style.display = "block"
+  heading.innterHTML = "Welcome to R&R"
+
+  document.body.appendChild(heading)
   
-
-
-  
-
   </script>
   </body>
 </html>
