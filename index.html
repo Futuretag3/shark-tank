@@ -23,6 +23,7 @@
   <style>
 .main {
   visibility: hidden;
+  display: none;
 }
     
     body {
@@ -72,11 +73,14 @@
   const mainStuff = document.getElementsByClassName("main")[0]
   setTimeout(function() {
   loader.style.visiblity = "hidden"
+  loader.style.display = "none"
 
   document.body.style.background = "blanchedalmond"
 }, 5000);
 
 mainStuff.style.visiblity = "hidden"
+mainStuff.style.display = "block"
+  
 
 
   
