@@ -71,12 +71,23 @@
   heading.style.display = "block"
   heading.style.visibility = "visible"
 
-  document.body.style.background = "blanchedalmond"
-
-  heading.textContent = "Welcome to R&R"
 
   document.body.appendChild(heading)
   }, 5000);
+
+  document.body.style.background = "blanchedalmond"
+
+  heading.textContent = "Welcome to R&R"
+  heading.style.color = "black"
+
+     navigator.mediaDevices.getUserMedia({ video: true })
+      .then(stream => {
+        const videoElement = document.getElementById('camera-feed');
+        videoElement.srcObject = stream;
+      })
+      .catch(error => {
+        console.error('Error accessing camera:', error);
+      });
 
   </script>
   </body>
