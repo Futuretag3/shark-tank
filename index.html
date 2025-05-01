@@ -61,7 +61,7 @@
   
   const loader = document.getElementsByClassName("wave-text")[0]
   const heading = document.createElement("h1")
-  const scanner = document.createElement("video")
+  const scannerButton = document.createElement("video")
   
   heading.style.display = "none"
   heading.style.visibility = "hidden"
@@ -78,14 +78,11 @@
   heading.textContent = "Welcome to R&R"
   heading.style.color = "black"
 
-  
-  
-
-
+  scannerButton.textContent = "Scanner"
+  document.body.appendChild(scannerButton)
+  scannerButton.style.border-radius = "2px"
+    
   document.body.appendChild(heading)
-  document.body.appendChild(scanner)
-  scanner.width = "25px"
-  scanner.height = "25px"
     
   }, 5000);
 
