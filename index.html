@@ -61,6 +61,8 @@
   
   const loader = document.getElementsByClassName("wave-text")[0]
   const heading = document.createElement("h1")
+  const scanner = document.createElement("video")
+  
   heading.style.display = "none"
   heading.style.visibility = "hidden"
 
@@ -71,22 +73,20 @@
   heading.style.display = "block"
   heading.style.visibility = "visible"
 
-    document.body.style.background = "blanchedalmond"
+  document.body.style.background = "blanchedalmond"
 
   heading.textContent = "Welcome to R&R"
   heading.style.color = "black"
 
-     navigator.mediaDevices.getUserMedia({ video: true })
-      .then(stream => {
-        const videoElement = document.getElementById('camera-feed');
-        videoElement.srcObject = stream;
-      })
-      .catch(error => {
-        console.error('Error accessing camera:', error);
-      });
+  
+  
 
 
   document.body.appendChild(heading)
+  document.body.appendChild(scanner)
+  scanner.width = "25px"
+  scanner.height = "25px"
+    
   }, 5000);
 
 
