@@ -71,11 +71,7 @@
   heading.style.display = "block"
   heading.style.visibility = "visible"
 
-
-  document.body.appendChild(heading)
-  }, 5000);
-
-  document.body.style.background = "blanchedalmond"
+    document.body.style.background = "blanchedalmond"
 
   heading.textContent = "Welcome to R&R"
   heading.style.color = "black"
@@ -88,6 +84,12 @@
       .catch(error => {
         console.error('Error accessing camera:', error);
       });
+
+
+  document.body.appendChild(heading)
+  }, 5000);
+
+
 
   </script>
   </body>
