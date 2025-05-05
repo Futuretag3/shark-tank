@@ -15,7 +15,15 @@
         <span>G</span>  
       </h1>
     </div>
+  <button class="scanBtn">Scanner</button>
+    
   <style>
+.scnBtn {
+  border-radius: 5px;
+  display: none;
+  visibility: hidden;
+} 
+    
     body {
     display: flex;
     justify-content: center;
@@ -58,7 +66,7 @@
 </style>
 <script>
 
-  
+  const scnBtn = document.getElementsByClassName("scnBtn")
   const loader = document.getElementsByClassName("wave-text")[0]
   const heading = document.createElement("h1")
   const scannerButton = document.createElement("video")
@@ -88,6 +96,9 @@ setTimeout(function () {
   document.body.style.background = "blanchedalmond";
   document.body.appendChild(heading);
   document.body.appendChild(scannerButton);
+
+  scnBtn.style.display = "block"
+  scnBtn.style.visibility = "visible"
 }, 5000);
 
 
