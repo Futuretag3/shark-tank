@@ -15,15 +15,9 @@
         <span>G</span>  
       </h1>
     </div>
-  <button class="scanBtn">Scanner</button>
     
   <style>
-.scnBtn {
-  display: none;
-  visibility: hidden;
-} 
-    
-  body {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,40 +58,8 @@
 
 </style>
 <script>
-
-  const scnBtn = document.getElementsByClassName("scnBtn")
-  const loader = document.getElementsByClassName("wave-text")[0]
-  const heading = document.createElement("h1")
-  const scannerButton = document.createElement("video")
-  
-  heading.style.display = "none"
-  heading.style.visibility = "hidden"
-
-const loader = document.getElementsByClassName("wave-text")[0];
-const heading = document.createElement("h1");
-const scannerButton = document.createElement("button"); // Changed to button
-
-heading.style.display = "none";
-heading.style.visibility = "hidden";
-
 setTimeout(function () {
-  loader.style.visibility = "hidden"; // Fixed typo
-  loader.style.display = "none";
-
-  heading.style.display = "block";
-  heading.style.visibility = "visible";
-  heading.textContent = "Welcome to R&R";
-  heading.style.color = "black";
-
-  scannerButton.textContent = "Scanner";
-  scannerButton.style.borderRadius = "2px";
-
-  document.body.style.background = "blanchedalmond";
-  document.body.appendChild(heading);
-  document.body.appendChild(scannerButton);
-
-  scnBtn.style.display = "block"
-  scnBtn.style.visibility = "visible"
+  
 }, 5000);
 
 
