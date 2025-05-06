@@ -8,11 +8,19 @@
         background-color: blanchedalmond;
       }
 
-      .header {
+      #header {
         font-size: 180px;
         text-align: center;
         font-family: 'Arial', sans-serif;
         margin-bottom: 30px;
+      }
+
+      #welcome {
+        font-size: 120px;
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        margin-bottom: 0px;
+        padding-bottom: 10px;
       }
 
       button {
@@ -24,13 +32,14 @@
 
       .buttonHolder {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 50px;
       }
     </style>
   </head>
   <body>
-    <h1 class="header">Welcome to </h1>
-    <h1 class="header">R & R</h1>
+    <h1 id="welcome">Welcome to </h1>
+    <h1 id="header">R & R</h1>
     <div class="buttonHolder">
       <button class="signup">Sign up</button>
       <button class="signin">Sign in</button>
