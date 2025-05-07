@@ -99,7 +99,16 @@
         <button id="scanner" onclick="window.alert('WORK IN PROGRESS')">Scanner</button>
         <button id="rewards" onclick="window.alert('WORK IN PROGRESS')">Rewards</button>
         <button id="finder" onclick="window.alert('WORK IN PROGRESS')">Finder</button>
-        <button id="contact" onclick="window.open('contact.html', '_self')">Contact Us</button>
+        <button id="contact")">Contact Us</button>
     </div>
+
+    <script>
+      document.getElementById('redirectBtn').addEventListener('click', function() {
+    
+      const query = window.location.search;
+
+      window.location.href = 'contact.html' + query;
+      });
+    </script>
 </body>
 </html>
