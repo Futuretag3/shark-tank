@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         body {
             background-color: blanchedalmond;
@@ -30,7 +31,7 @@
 </head>
 <body>
     <h1>Sign up</h1>
-    <form action="logins.php">
+    <form>
         <label for="fname">First Name:</label><br>
         <input type="text" id="fname"><br>
         <label for="lname" id="lname">Last Name:</label><br>
@@ -39,7 +40,9 @@
         <input type="email" name="email"><br>
         <label for="tel">Phone Number: </label><br>
         <input type="tel"><br>
-        <input type="submit">
+        <label for="password">Password: </label><br>
+        <input type="text"><br>
+        <input type="submit" onclick="window.open('main.html', '_self')">
     </form>
 </body>
 </html>
