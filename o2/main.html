@@ -99,16 +99,26 @@
         <button id="scanner" onclick="window.alert('WORK IN PROGRESS')">Scanner</button>
         <button id="rewards" onclick="window.alert('WORK IN PROGRESS')">Rewards</button>
         <button id="finder" onclick="window.alert('WORK IN PROGRESS')">Finder</button>
-        <button id="contact")">Contact Us</button>
+        <button id="contact">Contact Us</button>
     </div>
 
     <script>
-      document.getElementById('contact').addEventListener('click', function() {
-    
-      const query = window.location.search;
+      const contactBtn = document.getElementById('contact')
 
-      window.location.href = 'contact.html' + query;
-      });
+      contactBtn.onclick = function() {
+        let want_email = confirm("Would you like to contact us using email?")
+        let want_phone
+
+        if (want_email) {
+          window.open("mailto:RecycleAndRejuvinate@gmail.com")
+        } else {
+          want_phone = confirm("Would you like to contact us using phone?")
+          if (want_phone) {
+            window.open("tel:+13811410125")
+          }
+        }
+      }
     </script>
+
 </body>
 </html>
