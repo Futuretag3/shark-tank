@@ -12,9 +12,10 @@
         <input type="text">
     </form>
     <script>
-        const path = window.location.pathname
+        const params = new URLSearchParams(window.location.search)
 
-        const email = decodeURIComponent(path.substring(1))
+        const email = params.get('email')
+
         window.alert(email)
         
         const form = document.querySelector('form')
